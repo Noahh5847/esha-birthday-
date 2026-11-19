@@ -63,7 +63,26 @@ giftBoxes.forEach(function (box) {
             "giftMessage" + giftNumber
         );
 
-        if (message.style.display === "block") return;
+        
+if (message.style.display === "block") {
+    message.style.display = "none";
+    box.classList.remove("opened");
+    box.querySelector(".gift-hint").textContent = "Open me ♡";
+
+    // Pause music when closing the memory box
+    const audio = message.querySelector("audio");
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
+
+    const songStatus = document.getElementById("songStatus");
+    if (songStatus) {
+        songStatus.textContent = "Tap Play to start the song ♡";
+    }
+
+    return;
+}
 
         message.style.display = "block";
         
