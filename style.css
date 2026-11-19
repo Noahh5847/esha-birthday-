@@ -1019,16 +1019,19 @@ html, body, body * {
     font-size: 17px;
 }
 
+
 .food-wish {
-    margin-top: 35px;
-    padding: 25px 20px;
-    border: 1px solid #c6a587;
-    background: #f8f0e5;
+    margin-top: 25px;
+    padding: 20px 0;
+    border: none;
+    border-top: 1px solid #c6a587;
+    border-bottom: 1px solid #c6a587;
+    background: transparent;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.9;
     color: #654b3d;
-    text-align: center;
+    text-align: left;
 }
 
 .food-wish span {
@@ -1036,6 +1039,7 @@ html, body, body * {
     color: #923f4b;
     font-weight: 700;
 }
+
 
 #wishesButton,
 #finalButton {
