@@ -1164,3 +1164,19 @@ html, body, body * {
     width: fit-content;
     text-align: center;
 }
+
+/* Centre the third gift box */
+.gifts-section .gift-container .gift-item:nth-child(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 280px;
+    max-width: 100%;
+}
+
+/* Keep the button below all three gifts */
+.gifts-section #wishesButton {
+    display: block;
+    position: relative;
+    margin: 35px auto 40px;
+    clear: both;
+}
