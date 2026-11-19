@@ -1071,3 +1071,46 @@ html, body, body * {
         font-size: 15px;
     }
 }
+
+/* A LITTLE MEMORY MUSIC PLAYER */
+
+.memory-note {
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.8;
+    color: #795c4d;
+    margin-bottom: 22px;
+}
+
+.music-player {
+    margin-top: 20px;
+    padding: 20px 12px;
+    border-top: 1px solid #c6a587;
+    text-align: center;
+}
+
+.song-title {
+    font-size: 22px !important;
+    font-weight: 600;
+    color: #783c3d !important;
+    margin-bottom: 3px;
+}
+
+.song-artist {
+    font-size: 15px !important;
+    color: #98745d !important;
+    margin-bottom: 15px;
+}
+
+#memorySong {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto;
+}
+
+#songStatus {
+    font-size: 14px;
+    font-style: italic;
+    color: #98745d;
+    margin-top: 12px;
+}
