@@ -66,6 +66,23 @@ giftBoxes.forEach(function (box) {
         if (message.style.display === "block") return;
 
         message.style.display = "block";
+        
+if (giftNumber === "3") {
+
+    const memorySong = document.getElementById("memorySong");
+    const songStatus = document.getElementById("songStatus");
+
+    memorySong.currentTime = 0;
+
+    memorySong.play()
+        .then(() => {
+            songStatus.textContent = "Now playing ♡";
+        })
+        .catch(() => {
+            songStatus.textContent = "Tap Play to start the song ♡";
+        });
+}
+
         box.classList.add("opened");
 
         box.querySelector(".gift-hint").textContent =
