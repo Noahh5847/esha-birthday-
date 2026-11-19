@@ -274,10 +274,12 @@ h1 {
 
 /* APPRECIATION SECTION */
 
+
 .continue-button {
     display: block;
-    margin: 30px auto 10px;
-    padding: 13px 25px;
+    width: fit-content;
+    margin: 65px auto 30px;
+    padding: 13px 30px;
     border: 1px solid #9c7160;
     background: transparent;
     color: #783c3d;
