@@ -1114,3 +1114,28 @@ html, body, body * {
     color: #98745d;
     margin-top: 12px;
 }
+
+/* THREE GIFT BOXES - CLEAN ALIGNMENT */
+
+.gifts-section .gift-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 650px;
+    width: 100%;
+    margin: 35px auto;
+    justify-items: center;
+    align-items: start;
+}
+
+.gifts-section .gift-container > .gift-item:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+/* Keep gift boxes consistent */
+
+.gifts-section .gift-item {
+    width: 100%;
+    max-width: 300px;
+}
