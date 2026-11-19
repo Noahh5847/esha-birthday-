@@ -1180,3 +1180,30 @@ html, body, body * {
     margin: 35px auto 40px;
     clear: both;
 }
+
+/* Birthday gifts layout correction */
+#gift5Section .gift-container,
+#giftsSection .gift-container,
+.gifts-section .gift-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 280px));
+    justify-content: center;
+    align-items: start;
+    gap: 25px 30px;
+    max-width: 620px;
+    margin: 35px auto;
+}
+
+.gifts-section .gift-item:nth-child(3) {
+    grid-column: 1 / 3;
+    justify-self: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+.gifts-section #wishesButton {
+    display: block;
+    margin: 30px auto 45px;
+    position: relative;
+    clear: both;
+}
