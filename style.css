@@ -1207,3 +1207,28 @@ html, body, body * {
     position: relative;
     clear: both;
 }
+
+/* FINAL GIFT LAYOUT FIX */
+
+.gifts-section .gift-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 280px) !important;
+    justify-content: center !important;
+    align-items: start !important;
+    gap: 25px 30px !important;
+    margin: 35px auto !important;
+}
+
+.gifts-section .gift-item:nth-child(3) {
+    grid-column: 1 / 3 !important;
+    justify-self: center !important;
+    width: 280px !important;
+}
+
+#wishesButton {
+    display: block !important;
+    position: static !important;
+    float: none !important;
+    clear: both !important;
+    margin: 35px auto 20px !important;
+}
