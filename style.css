@@ -1139,3 +1139,28 @@ html, body, body * {
     width: 100%;
     max-width: 300px;
 }
+
+.gifts-section .gift-container {
+    display: grid;
+    grid-template-columns: repeat(2, 280px);
+    justify-content: center;
+    align-items: start;
+    gap: 25px 30px;
+    max-width: 650px;
+    margin: 35px auto 20px;
+}
+
+.gifts-section .gift-container > .gift-item:last-child {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+    max-width: 280px;
+}
+
+.gifts-section #wishesButton {
+    display: block;
+    position: relative;
+    margin: 25px auto 40px;
+    width: fit-content;
+    text-align: center;
+}
